@@ -5,9 +5,9 @@
 * Introduce to Machine Learing.
 * Notes about MOOC.
 * Tips for Fitness(exercise, diet etc.)
->Being excelsoir!>
+
+>Being excelsoir!
 
 ####Contact Me!
-***
 Modified by Tsien on 04/27/2015.
 Email: <fcqian@nuaa.edu.cn>
