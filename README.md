@@ -2,7 +2,7 @@
 ##**This is Tsien's Personal Website and Blog.**
 ***
 ###The Following parts are coming...
-* Introduce to Machine Learing.
+* Introduce to Machine Learning.
 * Notes about MOOC.
 * Tips for Fitness(exercise, diet etc.)
 
