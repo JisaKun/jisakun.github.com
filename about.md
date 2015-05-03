@@ -13,7 +13,7 @@ Currently, I am a senior student at [NUAA](http://nuaa.edu.cn/nuaanew/), China. 
 
 This is the base Jekyll theme. 
 
-This Blog is powered by Jekyll, Github and Markdown. I am not so familiar with this stuff now. But I will make it better and better. :)
+This Blog is powered by Jekyll, Github and Markdown. I am not so familiar with these stuffs now. But I will make it better and better. :)
 
 The theme of this blog:
 
@@ -30,5 +30,13 @@ to be continued...
 3. 书写是为了更好的思考
 4. 总结反省
 5. 锻炼自己的意志，学会持之以恒地做一件事
+
+Other awesome blogs I read a lot. Hope you enjoy them too.
+
+* [Free Mind](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/) About Machine Learning.
+* [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html) Some technical stuffs.
+* [Rachel Zhang](http://blog.csdn.net/abcjennifer) About Machine Learning.
+* [刘未鹏 | Mind Hacks | 思维改变生活](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/) Why I start blogging.
+
 
 
