@@ -11,5 +11,5 @@ github_username:  Tsien
 markdown: kramdown
 source: /Users/Tsien/Documents/Projects/tsien.github.com
 
-
-paginate: 10
+# This tells the paginator to break pages at ten posts. 
+paginate: 2
