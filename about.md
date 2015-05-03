@@ -36,7 +36,7 @@ Other awesome blogs I read a lot. Hope you enjoy them too.
 * [Free Mind](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/) About Machine Learning.
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html) Some technical stuffs.
 * [Rachel Zhang](http://blog.csdn.net/abcjennifer) About Machine Learning.
-* [刘未鹏 | Mind Hacks | 思维改变生活](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/) Why I start blogging.
+* [刘未鹏 \| Mind Hacks \| 思维改变生活](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/) Why I start blogging.
 
 
 
