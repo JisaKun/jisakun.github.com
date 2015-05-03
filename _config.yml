@@ -9,3 +9,7 @@ github_username:  Tsien
 
 # Build settings
 markdown: kramdown
+source: /Users/Tsien/Documents/Projects/tsien.github.com
+
+
+paginate: 10
