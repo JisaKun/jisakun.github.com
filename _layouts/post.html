@@ -4,16 +4,33 @@ comments: true
 ---
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">(<a href="{{ page.url }}#disqus_thread">Loading...</a>.)</p>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+    <div class="page">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+      <header class="page-header">
+        <h3 class="page-title">{{ page.title }}</h3>
+        <div class="post-metadata">
+            <span class="post-meta">(<a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Loading...</a>.)</span>
+          <div> <i class="fa fa-calendar"></i>  
+            <time>
+              {{ page.date | date:'%A, %B %d, %Y'}}
+            </time>
+          </div>
+          <div> <i class="fa fa-tag"></i>
+              {% for tag in page.tags %}
+                <span class="label label-primary">{{tag}}</span>
+              {% endfor %}
+          </div>
+        </div>
 
+      </header>
+
+      <article class="page-content">
+        {{ content }}
+      </article>
+    </div>
+  </div>
 </div>
 
 <div id="disqus_thread"></div>

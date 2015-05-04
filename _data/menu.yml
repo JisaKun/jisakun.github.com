@@ -1,0 +1,24 @@
+
+mainmenu:
+  home:
+    url: "/"
+    text: "Home"
+    icon_class: "fa-home"
+  aboutme:
+    url: "/about/"
+    text: "About"
+    icon_class: "fa-info-circle"
+  archive:
+    url: "/archive/"
+    text: "Archive"
+    icon_class: "fa-archive"
+  category:
+    url: "/category/"
+    text: "Category"
+    icon_class: "fa-flag"
+  tag:
+    url: "/tags/"
+    text: "Tags"
+    icon_class: "fa-tags"
+
+

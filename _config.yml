@@ -6,11 +6,12 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://tsien.github.io" # the base hostname & protocol for your site
 github_username:  Tsien
-
+logo_location: "https://en.gravatar.com/userimage/86247266/f73923736d489b00576858f341928dd1.jpg/100x100&text=LOGO"
 # Build settings
 markdown: kramdown
+highlighter: pygments
 source: /Users/Tsien/Documents/Projects/tsien.github.com
-exclude: trashbin
+exclude: ['otherStuff', 'README.md']
 
 # This tells the paginator to break pages at ten posts. 
 paginate: 2
