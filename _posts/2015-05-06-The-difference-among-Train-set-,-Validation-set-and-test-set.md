@@ -10,9 +10,10 @@ published: true
 
 之前一直没搞明白这三者的区别，尤其是验证集和测试集。后来，google了一下，看了一些资料，下面这个最靠谱吧。
 
->Training set: A set of examples used for learning, which is to fit the parameters [i.e., weights] of the classifier. 
-Validation set: A set of examples used to tune the parameters [i.e., architecture, not weights] of a classifier, for example to choose the number of hidden units in a neural network. 
-Test set: A set of examples used only to assess the performance [generalization] of a fully specified classifier.
+>
+* Training set: A set of examples used for learning, which is to fit the parameters [i.e., weights] of the classifier. 
+* Validation set: A set of examples used to tune the parameters [i.e., architecture, not weights] of a classifier, for example to choose the number of hidden units in a neural network. 
+* Test set: A set of examples used only to assess the performance [generalization] of a fully specified classifier.
 
 这是Ripley, B.D（1996）在他的经典专著Pattern Recognition and Neural Networks中给出了这三个词的定义。
 
