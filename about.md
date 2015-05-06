@@ -35,7 +35,7 @@ to be continued...
 4. 总结反省
 5. 锻炼自己的意志，学会持之以恒地做一件事
 
-#### Other awesome blogs I read a lot. Hope you enjoy them too.
+#### Other awesome blogs I visit frequently. Hope you enjoy them too.
 
 * [Free Mind](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/) About Machine Learning.
 * [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html) Some technical stuffs.
