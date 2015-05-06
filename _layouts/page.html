@@ -11,11 +11,14 @@ layout: default
         {% if page.subtitle %}
           <h5 class="page-subtitle"> {{ page.subtitle }} </h5>
         {% endif %}
+        
+        {% if page.date %}
         <small> <i class="fa fa-calendar"></i>
           <time>
             {{ page.date | date:'%A, %B %d, %Y'}}
           </time>
         </small>
+        {% endif %}
       </header>
 
       <article class="page-content">
