@@ -10,7 +10,7 @@ date: 2015-05-04 16:20
 
 Currently, I am a senior student at [NUAA](http://nuaa.edu.cn/nuaanew/), China. I am going to study at [UCSD](http://www.ucsd.edu) on Sept. I do have some SNS, but I rarely use them. The best way to contact me is email.
 
-Here is my [personal website](./home) (still under construction>.<)
+Here is my [personal website](../home) (still under construction>.<)
 
 
 ### About this Blog
