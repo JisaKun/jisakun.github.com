@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Useful Resources About Jekyll
-tags: Jekyll
+tags: Jekyll Blogs Tutorial 
+categories: Tech Resource
+published: true
 
 ---
 ####Overview

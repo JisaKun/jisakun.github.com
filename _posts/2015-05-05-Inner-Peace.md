@@ -3,7 +3,8 @@ layout: post
 title: Inner Peace, My most precious thing.
 date: 2015-05-04 15:27
 thumbnail:
-tags: Diary Life
+tags: Travel Peace Findme
+categories: Diary Life 
 published: true
 
 ---
