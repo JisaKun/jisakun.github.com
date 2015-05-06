@@ -11,7 +11,7 @@ logo_location: "https://en.gravatar.com/userimage/86247266/f73923736d489b0057685
 markdown: kramdown
 highlighter: pygments
 source: /Users/Tsien/Documents/Projects/tsien.github.com
-exclude: ['README.md', 'home']
+exclude: ['README.md']
 
 # This tells the paginator to break pages at ten posts. 
 paginate: 2

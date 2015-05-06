@@ -1,42 +1,26 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Categories
+permalink: /category/
+
 ---
 
-### About Me
+<ul class="tags-box">
+{% if site.posts != empty %}
+{% for cat in site.categories %}
+<a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] | join: "/"}}<span class="size"> {{ cat[1].size }}</span></a>
+{% endfor %}
+</ul>
 
-Currently, I am a senior student at [NUAA](http://nuaa.edu.cn/nuaanew/), China. I am going to study at [UCSD](http://www.ucsd.edu) on Sept. I do have some SNS, but I rarely use them. The best way to contact me is email.
-
-
-### About this Blog
-
-This is the base Jekyll theme. 
-
-This Blog is powered by Jekyll, Github and Markdown. I am not so familiar with these stuffs now. But I will make it better and better. :)
-
-The theme of this blog:
-
-1. Simple, as simple as possible, Keep it Simple Stupid(Kiss)
-2. original, everything posted must be original
-
-to be continued...
-
-
-目的：
-
-1. 锻炼自己的写作能力
-2. 记录学习过程，“教”是最好的“学”
-3. 书写是为了更好的思考
-4. 总结反省
-5. 锻炼自己的意志，学会持之以恒地做一件事
-
-Other awesome blogs I read a lot. Hope you enjoy them too.
-
-* [Free Mind](http://freemind.pluskid.org/machine-learning/softmax-vs-softmax-loss-numerical-stability/) About Machine Learning.
-* [阮一峰的网络日志](http://www.ruanyifeng.com/blog/archives.html) Some technical stuffs.
-* [Rachel Zhang](http://blog.csdn.net/abcjennifer) About Machine Learning.
-* [刘未鹏 \| Mind Hacks \| 思维改变生活](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/) Why I start blogging.
-
-
-
+<ul class="tags-box">
+{% for cat in site.categories %}
+<li id="{{ cat[0] }}">{{ cat[0]}}</li>
+{% for post in cat[1] %}
+<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time> &raquo;
+<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
+{% endfor %}
+{% endfor %}
+{% else %}
+<span>No posts</span>
+{% endif %}
+</ul>

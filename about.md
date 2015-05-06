@@ -10,7 +10,7 @@ date: 2015-05-04 16:20
 
 Currently, I am a senior student at [NUAA](http://nuaa.edu.cn/nuaanew/), China. I am going to study at [UCSD](http://www.ucsd.edu) on Sept. I do have some SNS, but I rarely use them. The best way to contact me is email.
 
-Here is my [personal website](http://tsien.github.io/home) (still under construction>.<)
+Here is my [personal website](./home) (still under construction>.<)
 
 
 ### About this Blog
@@ -42,6 +42,8 @@ to be continued...
 * [Rachel Zhang](http://blog.csdn.net/abcjennifer) About Machine Learning.
 * [刘未鹏 \| Mind Hacks \| 思维改变生活](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/) Why I start blogging.
 
+---
 
+Make something so awesome and incredible that it transforms the culture, the way people live and think.
 
 
