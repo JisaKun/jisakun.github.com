@@ -14,7 +14,7 @@ source: /Users/Tsien/Documents/Projects/tsien.github.com
 exclude: ['README.md']
 
 # This tells the paginator to break pages at ten posts. 
-paginate: 5
+paginate: 10
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
