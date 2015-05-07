@@ -12,6 +12,7 @@ markdown: kramdown
 highlighter: pygments
 source: /Users/Tsien/Documents/Projects/tsien.github.com
 exclude: ['README.md']
+excerpt_separator: "***"
 
 # This tells the paginator to break pages at ten posts. 
 paginate: 10
