@@ -7,7 +7,7 @@ categories: Leetcode
 published: false
 
 ---
-## Problem Link:[3Sum Closest](https://leetcode.com/problems/3sum-closest/) 
+### Problem Link:[3Sum Closest](https://leetcode.com/problems/3sum-closest/) 
 
 ### Solution 1
 

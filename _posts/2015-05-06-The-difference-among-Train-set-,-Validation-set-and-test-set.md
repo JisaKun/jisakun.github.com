@@ -2,7 +2,7 @@
 layout: post
 title: The difference among TrainSet, ValidationSet and TestSet
 date: 2015-05-06
-tags: machine-learning 
+tags: Machine_Learning 
 categories: Research
 published: true
 

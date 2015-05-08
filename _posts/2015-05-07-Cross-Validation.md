@@ -2,7 +2,7 @@
 layout: post
 title: Cross Validation
 date: 2015-05-07
-tags: Machine-learning
+tags: Machine_Learning
 categories: Research
 published: true
 

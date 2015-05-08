@@ -3,8 +3,8 @@ layout: post
 title: Crack Leetcode
 date: 2015-05-06
 thumbnail:
-tags: leetcode algorithm
-categories: Tech Leetcode 
+tags: Team 
+categories: Leetcode 
 published: true
 
 ---
