@@ -23,29 +23,6 @@ O(1)
 #### Source code:
 {% highlight C++ %}
 
-    class Solution {
-        public:
-        int threeSumClosest(vector<int>& nums, int target) {
-            sort(nums.begin(), nums.end());
-            int res, diff, mindif = INT_MAX;
-            for (int head, tail, i = 0; i < nums.size(); i++){
-                head = i + 1;
-                tail = nums.size() - 1;
-                while (head < tail){
-                    diff = nums[i] + nums[head] + nums[tail] - target;
-                    if (abs(diff) < mindif){
-                        res = nums[i] + nums[head] + nums[tail];
-                        mindif = abs(diff);
-                    }
-                    if (diff == 0)
-                        return target;
-                    else 
-                        diff < 0 ? head++ : tail--;
-                }
-            }
-            return res;
-        }
-    };
 {% endhighlight %}
 
 #### Reference:
@@ -62,9 +39,9 @@ O(1)
 
 #### Source code:
 
-```
-source code
-```
+{% highlight C++ %}
+
+{% endhighlight %}
 #### Reference:
 
 ---
@@ -78,9 +55,9 @@ source code
 #### Space Complexity:
 
 #### Source code:
-```
-source code
-```
+{% highlight C++ %}
+
+{% endhighlight %}
 #### Reference:
 
 ---
