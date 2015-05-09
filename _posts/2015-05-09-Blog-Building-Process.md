@@ -16,6 +16,8 @@ published: true
 * 摘要部分经常出现混乱，不美观
 * Categories\Tags两个页面需重新设计
 * 个人网站的路径问题
+* Disqus 在首页一直是loading状态
+* 购买域名
 
 
 _Last Modification By Tsien @ 2015/05/09 10:17_
