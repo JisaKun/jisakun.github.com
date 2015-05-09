@@ -4,7 +4,7 @@ title: How to determine the number of neurons in hidden layer
 date: 2015-05-09
 tags: Machine_Learning Neural_Network
 categories: Research
-published: false
+published: true
 
 ---
 
