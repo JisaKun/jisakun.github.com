@@ -9,13 +9,15 @@ published: true
 ---
 
 毕设进行到实验阶段了，整个模型关键两个参数：
+
 1. 用于集成基学习机的个数
+
 2. SLFN隐藏层神经元节点个数
 
 
 #### 关于隐藏节点个数的选取
 
-** use a Cross-Validation technique **
+_use a Cross-Validation technique_
 
 >One the most common approaches to determine the hidden units is to start with a very small network (one hidden unit) and apply the K-fold cross validation ( k over 30 will give very good accuracy) and estimate the average prediction risk. Then you will have to repeat the procedure for increasing growing networks, for example for 1 to 10 hidden units or more if needed.
 
@@ -34,7 +36,8 @@ Basically, it works like this:
 4) You choose the number of neurons whose average testing error over the k trials of point (3) is lowest. 
 
 
-** Rules-of-thumb: **
+_Rules-of-thumb:_
+
 >'The optimal size of the hidden layer is usually between the size of the input and size of the output layers'. Jeff Heaton, author of Introduction to Neural Networks in Java offers a few more.
  
 One additional rule of thumb for supervised learning networks, the upperbound on the number of hidden neurons that won't result in over-fitting is:

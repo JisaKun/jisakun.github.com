@@ -18,6 +18,7 @@ published: true
 * 个人网站的路径问题
 * Disqus 在首页一直是loading状态
 * 购买域名
+* 网页的图标设计
 
 
-_Last Modification By Tsien @ 2015/05/09 10:17_
+_Last Modification By Tsien @ 2015/05/09 20:53_
