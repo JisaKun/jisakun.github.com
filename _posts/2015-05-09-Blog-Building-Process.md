@@ -19,6 +19,7 @@ published: true
 * Disqus 在首页一直是loading状态
 * 购买域名
 * 网页的图标设计
+* Markdown 编辑器显示与网页显示效果相差非常大
 
 
 _Last Modification By Tsien @ 2015/05/09 20:53_
