@@ -3,7 +3,7 @@ layout: post
 title: Record for blog construction(Continue to update...)
 date: 2015-05-09
 thumbnail:
-tags: Blog Problem-Shooting
+tags: Blog Problem_Shooting
 categories: Blog
 published: true
 
