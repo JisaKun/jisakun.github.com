@@ -7,58 +7,58 @@ categories: Leetcode
 published: false
 
 ---
-### Problem Link:[3Sum Closest](https://leetcode.com/problems/3sum-closest/) 
+#### Problem Link:[3Sum Closest](https://leetcode.com/problems/3sum-closest/) 
 
-### Solution 1
+#### Solution 1
 
-#### Idea:
+##### Idea:
 The same as [Q15](https://github.com/Tsien/Leetcode/blob/master/Q15.md#idea).
 
-#### Time Complexity:
+##### Time Complexity:
 O(n^2)
 
-#### Space Complexity:
+##### Space Complexity:
 O(1)
 
-#### Source code:
+##### Source code:
 {% highlight C++ %}
 
 {% endhighlight %}
 
-#### Reference:
+##### Reference:
 
 ---
 
-### Solution 2
+#### Solution 2
 
-#### Idea:
+##### Idea:
 
-#### Time Complexity:
+##### Time Complexity:
 
-#### Space Complexity:
+##### Space Complexity:
 
-#### Source code:
+##### Source code:
 
 {% highlight C++ %}
 
 {% endhighlight %}
-#### Reference:
+##### Reference:
 
 ---
 
-### Solution 3
+#### Solution 3
 
-#### Idea:
+##### Idea:
 
-#### Time Complexity:
+##### Time Complexity:
 
-#### Space Complexity:
+##### Space Complexity:
 
-#### Source code:
+##### Source code:
 {% highlight C++ %}
 
 {% endhighlight %}
-#### Reference:
+##### Reference:
 
 ---
 
