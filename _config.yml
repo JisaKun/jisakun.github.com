@@ -37,5 +37,3 @@ comments :
     short_name : tsiengithubio
 
 excerpt_separator: "\n\n"
-kramdown:
-  input: GFM

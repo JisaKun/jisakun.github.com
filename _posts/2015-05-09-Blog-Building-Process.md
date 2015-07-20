@@ -18,10 +18,10 @@ _目前存在的问题：_
 * 个人网站的路径问题
 * Disqus 在首页一直是loading状态（路径问题）
 * 购买域名
-* 网页的图标设计 
 * RSS feed 
 * 字体大小需要微调(用python批处理)
 * google analysis 
+* Markdown 解析不完全：strikethrough 和 表格
 
 
 _已解决：_   
