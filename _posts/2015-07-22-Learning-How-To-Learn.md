@@ -13,11 +13,11 @@ published: true
 ---
 
 #### Week 1: Learn more easily and be less frustrated 
-* 思考的两种模式: Focused 和 Diffuse
+* 思考的两种模式: **Focused** 和 **Diffuse**
     * Focused：旧思维
     * Diffuse: 容易学习新东西。look at things broadly from a very different, big picture perspective.
 * 学新东西的时候，来回进入focused和diffuse两种思考模式。do it a little bit every day.
-* Procrastination对抗拖延：番茄工作法
+* Procrastination对抗拖延：*番茄工作法*
 
 
 >"it's all about getting started"
@@ -35,23 +35,26 @@ published: true
 
 
 #####  Working memory(临时工作空间) & Long term memory(永久仓库)
-* 间隙重复法则spaced repetition transforms working memory to long term memory.
-    * repeating what you’re trying to retain
+
+* 间隙重复法则**Spaced repetition** transforms working memory to long term memory.
+    * Repeating what you’re trying to retain
     * 在较长一段时间内间隙重复练习，而不是短时间内大量重复练习
 
 ##### The importance of Sleep in Learning
 
-* 睡觉过程中，脑细胞收缩，大脑清理脑细胞间的毒素
-* 大脑会自动重复白天练习的内容，强化记忆
-* 睡前，复习下当日白天所学的知识，会增加在梦中强化记忆的效果
+* **Refresh** 睡觉过程中，脑细胞收缩，大脑清理脑细胞间的毒素
+* **Memorize** 大脑会自动重复白天练习的内容，强化记忆
+* **Recall before Sleep** 睡前，复习下当日白天所学的知识，会增加在梦中强化记忆的效果
 
 ##### Interview
-* learning by doing
-* positive engagement in class
-* switch among multitasks
-* have a notebook to record ideas
-* have an enriched environment / Exercise is very important to help both our memory and our ability to learn
-* success needs passion and persistent instead of being smart
+
+* Learning by doing
+* Positive engagement in class
+* Switch among multitasks
+* Have a notebook to record ideas
+* Have **an enriched environment**
+* **Exercise** is very important to help both our memory and our ability to learn
+* Success needs **passion** and **persistent** instead of being smart
 
 
 * Creativity and Problem Solving
@@ -59,9 +62,9 @@ published: true
     * No pain, no gain. 
     
 * About Learning Languages
-    * try to embrace the culture
-    * ok with making mistakes
-    * pushing your attention very hard
+    * Try to embrace the _culture_
+    * Ok with making mistakes
+    * Pushing your attention very hard
 
 ---
 
@@ -70,9 +73,9 @@ published: true
 * Chunking
     * 必须实践才能形成chunk：only doing it yourself helps create chunk
     * 形成chunk的三要素：
-    * 需要专注focused attention
-    * 基础非常重要understanding of basic idea
-    * 练习practice to help you gain mastery and a sense of the big picture context
+        * 需要专注_focused attention_
+        * 基础非常重要_understanding of basic idea_
+        * 练习 _practice_ to help you gain mastery and a sense of the _big picture context_
 
 * Recall 
     * 不借助资料，凭空回忆重要的知识点，以此来帮助enhance chunk
@@ -89,18 +92,19 @@ published: true
     * A chunk is a way of compressing information much more compactly. Neural patterns.
 
 * Overlearning, Choking, Einstellung, and Interleaving
-    * 刻意练习：跳出安逸舒适区，专注于克服困难deliberate learning: focus on the more difficult material 
+    * 刻意练习：跳出安逸舒适区，专注于克服困难 **deliberate learning**: focus on the more difficult material 
     * Einstellung： 忘记早已烂熟于心的方法
     * Interleaving：尝试用不同方法去解决问题
 
 * Summing it up:
     * chunks are pieces of information, are bound together through use and often through meaning
-    * chunks are best built with focused, undivided attention, understanding of basic idea and practice to help deepen your patterns and to help you gain big picture context.
-    * Recall, trying to remember the key points without looking at the page. 
+    * chunks are best built with _focused, undivided attention, understanding of basic idea and practice to help deepen your patterns and to help you gain big picture context._
+    * **Recall**, trying to remember the key points without looking at the page. 
     * Transfer， 不同chunk之间的交流
     * interleaving learning: 同时尝试不同的方法、概念、技术
     * Illusion of competence: test yourself (recall)
-    * Low of serendipity: Lady Luck favors the one who tries. Just try one tiny thing to learn, then another. Just keep trying. 
+    * **Low of serendipity: Lady Luck favors the one who tries.**
+    > Just try one tiny thing to learn, then another. Just keep trying. 
 
 ---
 
@@ -109,25 +113,25 @@ published: true
 * Zombies Everywhere:
     * Habits save energy.
     * Four parts of a habit:
-        * The cue : the trigger that launches you into zombie mode
-        * The routine: your zombie mode. 
-        * The reward: 立即反馈，立即奖励
-        * The belief
+        * **The cue**: the trigger that launches you into zombie mode
+        * **The routine**: your zombie mode. 
+        * **The reward**: 立即反馈，立即奖励
+        * **The belief**
         
-* Surf's Up: Process Versus Product:
-    * Tell yourself: quit wasting time, and just get on with it, you will fell better soon.
-    * focus on process not product注重努力的过程而不是结果；专注于完成一个番茄时间，而不是完成一项任务。By focusing on process rather than product, you allow yourself to back away from judging yourself (Am I getting closer to finishing? ) and allow yourself to relax into the flow of the 
+* Surf's Up: **Process** Versus Product:
+    * Tell yourself: **quit wasting time, and just get on with it, you will fell better soon.**
+    * Focus on **process** not product注重努力的过程而不是结果；专注于完成一个番茄时间，而不是完成一项任务。By focusing on process rather than product, you allow yourself to back away from judging yourself (Am I getting closer to finishing? ) and allow yourself to relax into the **flow** 
     
 * Harnessing Your Zombies to Help You
-    * The only place you need to apply willpower is to change your reaction to the cue. 
+    * The only place you need to apply willpower is to _change your reaction to the cue._ 
     * The cue
         * Location
         * time
         * how you feel
-        * reactions
+        * **reactions**
     * The routine
         * Have a plan to rewire 
-    * The reward
+    * **The reward**
         * 非常重要！！！
         * Always make sure you and your zombies get lots of rewards
         * Take a few minutes to savor the feelings of happiness and triumph  
@@ -137,17 +141,17 @@ published: true
 
 * Juggling Life and Learning
     * Make to-do list the evening before. 这样晚上睡觉时，潜意识会自动想办法解决问题
-    * 在其他活动中，使用diffuse mode 来思考解决问题
-    * 在制定每日任务时，多使用process-oriented， 而不是目标导向的。比如阅读1小时，而不是阅读完第三章  
-    * Planning your quitting time is as important as planning your working time.
-    * Try to work on a most important and most disliked task first. At least just one Pomodoro, as soon as you wake up.
+    * 在其他活动中，使用**diffuse mode** 来思考解决问题
+    * 在制定每日任务时，多使用**process-oriented**， 而不是目标导向的。比如阅读1小时，而不是阅读完第三章  
+    * Planning your **quitting time** is as important as planning your working time.
+    * **Try to work on a most important and most disliked task first**. At least just one Pomodoro, as soon as you wake up.
     * Take notes about what works and what doesn't记录那些事是有效的，哪些事是没效的(e.g., 生病记录，心情变化记录)
 
 
 * Summing Up Procrastination
-    * Keep a planner journal 
+    * **Keep a planner journal**
     * Commit yourself to certain routines and tasks each day
-    * Delay rewards until you finish your task
+    * **Delay rewards** until you finish your task
     * Watch for procrastination cues
     * Gain trust in your new system
     * Have backup plans when you still procrastinate
@@ -170,23 +174,23 @@ published: true
 
 * How to Become a Better Learner
     * Two experiences that help your neurons to grow and survive
-        * Exercise!
+        * **Exercise!**
             * The best gift that you can give your brain is Physical Exercise.
             * help new neurons survive
             * Exercise is by far, more effective than any drug on the market today to help you learn better. 
-        * exposure to new environments or ideas.
-    * Practice making perfect
+        * exposure to **new environments or ideas.**
+    * **Practice** making perfect
     
 * Create a Lively Visual Metaphor or Analogy
     * Use metaphor or analogy to help learn. More visual more useful. 
     
 * No Need for Genius Envy
-    * Perseverance is more essential.
-    * deliberate practice on the toughest aspects of the material that can help lift average brains into the realm of those with more natural gifts. like muscles 
+    * **Perseverance** is more essential.
+    * **deliberate practice** on the toughest aspects of the material that can help lift average brains into the realm of those with more natural gifts. like muscles 
     * Imposter syndrome: very common 
     
 * Change Your Thoughts, Change Your Life
-    * the key to success: perseverance — the virtue of the less brilliant 
+    * the key to success: **perseverance** — the virtue of the less brilliant 
     * you can take pride in aiming for success
     
 * The Value of Teamwork
