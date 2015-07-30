@@ -3,7 +3,7 @@ layout: post
 title: 叔本华《人生的智慧》阅读记录
 date: 2015-05-08
 tags: Schopenhauer 
-categories: Philosophy Schopenhauer
+categories: Philosophy Schopenhauer 
 published: true
 
 ---

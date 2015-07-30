@@ -104,6 +104,7 @@ published: true
     * interleaving learning: 同时尝试不同的方法、概念、技术
     * Illusion of competence: test yourself (recall)
     * **Low of serendipity: Lady Luck favors the one who tries.**
+    
     > Just try one tiny thing to learn, then another. Just keep trying. 
 
 ---
