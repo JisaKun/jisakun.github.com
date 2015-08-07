@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Resources About Jekyll
-tags: Jekyll Blogs Tutorial 
+tags: Jekyll Blog Tutorial 
 categories: Tech Resource
 published: true
 

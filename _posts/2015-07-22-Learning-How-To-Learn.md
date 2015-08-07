@@ -2,7 +2,7 @@
 layout: post
 title: "A MOOC Note about Learning How To Learn"
 date: 2015-07-22
-tags: Learn
+tags: Learning MOOC 
 categories: MOOC 
 published: true
 
