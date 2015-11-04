@@ -1,5 +1,5 @@
-# tsien.github.com
-##**This is Tsien's Personal Website and Blog.**
+# JisaKun.github.io
+##**JisaKun's Blog !**
 ***
 ###The Following parts are coming...
 * Introduce to Machine Learning.
@@ -9,5 +9,4 @@
 >Being excelsoir!
 
 ####Contact Me!
-Modified by Tsien on 04/27/2015.
-Email: <fcqian@nuaa.edu.cn>
+Email: <hongchuan1992@163.com>

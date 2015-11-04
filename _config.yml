@@ -1,11 +1,11 @@
 # Site settings
-title: Home | Tsien's Blog
-email: feqian@ucsd.edu
+title: Home | JisaKun's Blog
+email: JisaKun@yeah.net
 description: > # this means to ignore newlines until "baseurl:"
   A place where I try to find myself.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://tsien.github.io" # the base hostname & protocol for your site
-github_username:  Tsien
+url: "http://JisaKun.github.io" # the base hostname & protocol for your site
+github_username:  JisaKun
 logo_location: "https://en.gravatar.com/userimage/86247266/f73923736d489b00576858f341928dd1.jpg/100x100&text=LOGO"
 # Build settings
 markdown: redcarpet
