@@ -48,5 +48,5 @@ To be continued...
 [english version]: http://jekyllrb.com
 [chinese version]: http://jekyll.bootcss.com
 [Jekyll]: https://github.com/jekyll/jekyll
-[This Blog]: https://github.com/Tsien/tsien.github.com
+[This Blog]: https://github.com/JisaKun/jisakun.github.com
 [Themes]: http://jekyllthemes.org

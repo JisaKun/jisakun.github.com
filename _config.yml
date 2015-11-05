@@ -34,6 +34,6 @@ analytics :
 comments :
   provider : disqus
   disqus :
-    short_name : tsiengithubio
+    short_name : jisakungithubio
 
 excerpt_separator: "\n\n"
