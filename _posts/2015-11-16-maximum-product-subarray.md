@@ -18,7 +18,8 @@ published: true
 local[i+1] = Max(local[i]+A[i+1], A[i+1])；
 globla[i+1] = Max(global[i], local[i+1]);
 {% endhighlight %}
-其中local[i+1]为局部最优，可以理解为包含A[i+1]元素的最优解，而global[i+1]为前i+1个元素的最优解，整个还是很好理解的。
+其中 local[i+1] 为局部最优，可以理解为包含 A[i+1] 元素的最优解，而 global[i+1] 为前 i+1 个元素的最优解，整个还是很好理解的。
+
 在来看看最大乘积的情况，因为乘积可能存在负负得正，一个最小的负值乘以负数反而得到一个较大的值，所以要同时维持局部最大值和局部最小值：
 {% highlight Java %}
 int minCopy = minLocal;
@@ -33,7 +34,7 @@ O(n)
 O(1)
 
 ##### Source code:
-{% highlight Java %}
+{% highlight Java linenos %}
 public int maxProduct(int[] nums) {
     int LENGTH = nums.length;
     int minLocal=nums[0];
@@ -50,7 +51,7 @@ public int maxProduct(int[] nums) {
 {% endhighlight %}
 
 ##### Reference:
+[LeetCode：Maximum Product Subarray](http://www.cnblogs.com/bakari/p/4007368.html)
 
-http://www.cnblogs.com/bakari/p/4007368.html
 ---
 
