@@ -12,14 +12,13 @@ published: true
 #### Solution 1
 
 ##### Idea:
-拿到问题首先考虑了暴力求解，然后不出意外地 TLE 了……
+拿到问题首先考虑了暴力求解，然后不出意外得TLE了……
 这是一个动态规划问题，重点是写出状态转移方程，先来看看 Maximum Subarray 的情况：
 {% highlight Java %}
 local[i+1] = Max(local[i]+A[i+1], A[i+1])；
 globla[i+1] = Max(global[i], local[i+1]);
 {% endhighlight %}
-其中 local[i+1] 为局部最优，可以理解为包含 A[i+1] 元素的最优解，而 global[i+1] 为前 i+1 个元素的最优解，整个还是很好理解的。
-
+其中local[i+1]为局部最优，可以理解为包含A[i+1]元素的最优解，而global[i+1]为前i+1个元素的最优解，整个还是很好理解的。
 在来看看最大乘积的情况，因为乘积可能存在负负得正，一个最小的负值乘以负数反而得到一个较大的值，所以要同时维持局部最大值和局部最小值：
 {% highlight Java %}
 int minCopy = minLocal;
@@ -51,7 +50,39 @@ public int maxProduct(int[] nums) {
 {% endhighlight %}
 
 ##### Reference:
-[LeetCode：Maximum Product Subarray](http://www.cnblogs.com/bakari/p/4007368.html)
+
+---
+
+#### Solution 2
+
+##### Idea:
+
+##### Time Complexity:
+
+##### Space Complexity:
+
+##### Source code:
+
+{% highlight C++ %}
+
+{% endhighlight %}
+##### Reference:
+
+---
+
+#### Solution 3
+
+##### Idea:
+
+##### Time Complexity:
+
+##### Space Complexity:
+
+##### Source code:
+{% highlight C++ %}
+
+{% endhighlight %}
+##### Reference:
 
 ---
 
