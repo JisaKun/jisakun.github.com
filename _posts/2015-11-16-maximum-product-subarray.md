@@ -12,7 +12,7 @@ published: true
 #### Solution 1
 
 ##### Idea:
-拿到问题首先考虑了暴力求解，然后不出意外得TLE了……
+拿到问题首先考虑了暴力求解，然后不出意外地 TLE 了……
 这是一个动态规划问题，重点是写出状态转移方程，先来看看 Maximum Subarray 的情况：
 {% highlight Java %}
 local[i+1] = Max(local[i]+A[i+1], A[i+1])；
