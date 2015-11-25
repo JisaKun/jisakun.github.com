@@ -12,7 +12,7 @@ published: true
 
 今天在写页面的时候遇到了一个问题：我想实现的效果是：当一个下拉列表的值改变时，改变一个 `<input>` 标签的 value 属性。
 
-一开始的代码是这样的:
+一开始的代码是这样的: 
 {% highlight jQuery %}
 <script>
 	$("select").change(function(){
