@@ -10,10 +10,10 @@ published: true
 ---
 #### Overview
 
-今天在写页面的时候遇到了一个问题：我想实现的效果是：当一个下拉列表的值改变时，改变一个 <input> 标签的 value 属性。
+今天在写页面的时候遇到了一个问题：我想实现的效果是：当一个下拉列表的值改变时，改变一个 `<input>` 标签的 value 属性。
 
 一开始的代码是这样的:
-{% highlight jsp %}
+{% highlight jQuery %}
 <script>
 	$("select").change(function(){
 		// before 
@@ -25,11 +25,11 @@ published: true
 
 结果就是 value 属性并不会百分百被修改成功。
 
-后来我分别使用 val() / attr("value") / prop("value") 观察赋值后的 value 属性值，发现 val() 与 prop("value") 会输出正确的赋值，
-而 attr("value") 有时会输出赋值前的值。
+后来我分别使用 `.val()` / `.attr("value")` / `.prop("value")` 观察赋值后的 value 属性值，发现 `.val()` 与 `.prop("value")` 会输出正确的赋值，
+而 `.attr("value")` 有时会输出赋值前的值。
 
-在网上查资料后得知，在 jQuery 的某个版本（1.6？）之后，通过 attr() 获取属性值，得到的仅仅是 html 页面初始化时的值，同时用它给属性赋值，修改的仅仅是“标记”，
-是初值；但是用 val() 修改的是“值域”，是可以与用户交互改变的值。
+在网上查资料后得知，在 jQuery 的某个版本（1.6？）之后，通过 `.attr()` 获取属性值，得到的仅仅是 html 页面初始化时的值，同时用它给属性赋值，修改的仅仅是“标记”，
+是初值；但是用 `.val()` 修改的是“值域”，是可以与用户交互改变的值。
 
 StackOverflow 上是这么解释的：
 
@@ -39,9 +39,9 @@ StackOverflow 上是这么解释的：
 > 
 > The gist is that .attr(...) is only getting the objects value at the start (when the html is created). val() is getting the object's property value which can change many times.
 
-而 prop() 同 val() 。
+而 `.prop()` 同 `.val()` 。
 
-所以讲赋值改为 val() ，赋值失败的问题就消失了。
+所以讲赋值改为 `.val()` ，赋值失败的问题就消失了。
 
 （但其实对这三个方法的机制还不是很理解）
 
