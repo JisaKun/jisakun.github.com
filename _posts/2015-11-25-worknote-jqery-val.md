@@ -23,6 +23,16 @@ published: true
 </script>
 {% endhighlight %}
 
+``` javascript
+<script>
+	$("select").change(function(){
+		// before 
+		$("input").attr("value", xxxxx);
+		// after 
+	})
+</script>
+```
+
 结果就是 value 属性并不会百分百被修改成功。
 
 后来我分别使用 `.val()` / `.attr("value")` / `.prop("value")` 观察赋值后的 value 属性值，发现 `.val()` 与 `.prop("value")` 会输出正确的赋值，
