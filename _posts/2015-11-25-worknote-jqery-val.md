@@ -14,7 +14,7 @@ published: true
 
 一开始的代码是这样的: 
 
-``` javascript
+~~~ javascript
 <script>
 	$("select").change(function(){
 		// before 
@@ -22,7 +22,7 @@ published: true
 		// after 
 	})
 </script>
-```
+~~~
 
 结果就是 value 属性并不会百分百被修改成功。
 

@@ -9,8 +9,9 @@ github_username:  JisaKun
 logo_location: "https://en.gravatar.com/userimage/86247266/f73923736d489b00576858f341928dd1.jpg/100x100&text=LOGO"
 # Build settings
 markdown: kramdown
-redcarpet:
-    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+kramdown:
+  input:  GFM
+  use_coderay: true
 highlighter: rouge
 exclude: ['README.md']
 excerpt_separator: "***"
