@@ -3,10 +3,9 @@ layout: post
 title: MySQL Sort 分页数据重复出现
 date: 2016-03-30 15:27
 thumbnail:
-tags: mySQL 内核
+tags: mySQL 内核 工作日志
 categories: MySQL
 published: true
-
 ---
 
 ## Overview
@@ -27,7 +26,7 @@ published: true
 
 在MySQL 5.6的版本上，优化器在遇到order by limit语句的时候，做了一个优化，即使用了priority queue。参考伪代码：
 
-~~~
+``` 
     while (get_next_sortkey())
          {
            if (using priority queue)
@@ -47,7 +46,7 @@ published: true
            sort-dump-dump as above;
          else
            don't sort, leave sort_keys array to be sorted by caller.
-~~~
+```
 
 使用 priority queue 的目的，就是在不能使用索引有序性的时候，如果要排序，并且使用了limit n，那么只需要在排序的过程中，保留n条记录即可，这样虽然不能解决所有记录都需要排序的开销，但是只需要 sort buffer 少量的内存就可以完成排序。
 
@@ -86,6 +85,7 @@ published: true
 **3. NULL值和空串问题**
 
 不同的数据库对于NULL值和空串的理解和处理是不一样的，比如Oracle NULL和NULL值是无法比较的，既不是相等也不是不相等，是未知的。而对于空串，在插入的时候，MySQL是一个字符串长度为0的空串，而Oracle则直接进行NULL值处理。
+
 
 
 ## 参考
