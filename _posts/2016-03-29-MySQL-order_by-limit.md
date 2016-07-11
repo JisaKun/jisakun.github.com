@@ -3,7 +3,7 @@ layout: post
 title: MySQL Sort 分页数据重复出现
 date: 2016-03-30 15:27
 thumbnail:
-tags: mySQL 内核 工作日志
+tags: MySQL 内核 工作日志
 categories: MySQL
 published: true
 ---
