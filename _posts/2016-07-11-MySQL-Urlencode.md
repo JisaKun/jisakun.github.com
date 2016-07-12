@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL:URLEncode函数、URLDecode函数、MultiURLDecode 函数 
-date: 2015-07-11 19:37
+date: 2016-07-11 19:37
 thumbnail:
 tags: MySQL UrlEncode
 categories: MySQL
@@ -140,6 +140,8 @@ DELIMITER ;
 `URLEncode`会将一个字符或者汉字变成3个2位十六进制数字：%AB%CD%EF。
 
 所以`URLDecode`的原理大概就是读取三个十六进制数字拼成ABCDEF，然后通过`CONV()`函数转化为十进制，再将通过`CHAR()`这个十进制数转为字符。
+
+
 
 
 
