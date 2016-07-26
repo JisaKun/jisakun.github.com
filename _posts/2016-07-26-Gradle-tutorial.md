@@ -70,7 +70,7 @@ Groovy在上述特性中发挥了极大的作用。Ant和Maven中使用的XML，
 
 尽管理解Gradle不需要你学习Groovy，但是如果你想了解Groovy的全部威力，你应该学习它。
 
-**Groovy在你安装Gradle的时候就已经默认安装好了一个内部版本，所以你不需要单独下载杆状它。**
+**Groovy在你安装Gradle的时候就已经默认安装好了一个内部版本，所以你不需要单独下载安装它。**
 
 #### 基本Gradle命令
 
@@ -123,4 +123,10 @@ Other tasks
 -----------
 compileTask
 ```
+
+我们的编译文件（build.gradle）就是一些列的任务（task）的组合，这里就带出了第一个的概念**任务（task）** ，任务指定了gradle编译系统要为我们执行的代码。当前我们所指定的项目被称作**compileTask**，就如你所看到的，我们使用了Groovy代码来定义这个任务，这个任务所要做的事情，就是简单的执行一个 `System.out.println`。要记住Groovy是高级的JVM语言。
+
+我们要如何运行 **compileTask** 命令呢？
+
+别急，我们还有几点概念需要理解。当我们执行gradle命令时，会在当前文件夹内寻找`build.gradle`文件。一旦找到就使用这个文件。在上面的例子中，
 
