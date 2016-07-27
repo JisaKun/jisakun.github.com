@@ -8,7 +8,7 @@ categories: gradle
 published: false
 
 ---
-原文链接：[Romin Irani's Blog](https://rominirani.com/announcing-gradle-tutorial-series-5fd134223bf8#.2mi16ux8a)
+原文链接：[Romin Irani's Blog](https://rominirani.com/announcing-gradle-tutorial-series-5fd134223bf8#.2mi16ux8a)（不知道为什么，需要梯子）
 
 原文共分为10篇，后几篇涉及到Android内容，我用不到，就只记录了前四篇。
 
@@ -128,5 +128,94 @@ compileTask
 
 我们要如何运行 **compileTask** 命令呢？
 
-别急，我们还有几点概念需要理解。当我们执行gradle命令时，会在当前文件夹内寻找`build.gradle`文件。一旦找到就使用这个文件。在上面的例子中，
+别急，我们还有几点概念需要理解。当我们执行gradle命令时，会在当前文件夹内寻找`build.gradle`文件。一旦找到就使用这个文件。在上面的例子中，Gradle发现了文件中所列的任务并添加至执行列表。
+
+所以我们只执行`gradle`命令，没有其他参数，也不指定任何任务：
+
+``` shell
+gradle
+```
+
+会输出以下内容：
+
+``` shell
+:help
+Welcome to Gradle 2.2.1.
+To run a build, run gradle <task> ...
+To see a list of available tasks, run gradle tasks
+To see a list of command-line options, run gradle --help
+BUILD SUCCESSFUL
+Total time: 2.39 secs
+```
+
+输出信息提示你需要在运行命令时指定任务名，如`gradle <task>`。我们再试一次下面的命令：
+
+```shell
+gradle -q compileTask
+```
+
+输出如下：
+
+``` shell
+compiling
+```
+
+接下来为 build.gradle 再添加一个任务：
+
+``` groovy
+task compileTask << {
+ System.out.println "compiling..." 
+}
+task buildTask << {
+ System.out.println "building..."
+}
+```
+
+现在执行`gradle -q tasks`，你会发现两个任务都出现在**Other Task**列表中：
+
+``` shell
+Other tasks
+-----------
+buildTask
+compileTask
+```
+
+现在你可以通过`gradle compileTask`或`gradle buildTask`等命令运行这些任务了。
+
+我们还可以指定一个默认任务，这样当我们不指定任务名的时候，默认任务就会执行：
+
+``` groovy
+defaultTasks 'buildTask'
+
+task compileTask << {
+  System.out.println "compiling..." 
+}
+task buildTask << {
+  System.out.println "building..."
+}
+```
+
+现在执行 `gradle -q` 就会打印 **building...** 字符串。
+
+最后我们需要知道任务之间存在依赖关系。如果我们使 **buildTask** 依赖于 **compileTask** ，那么每次 **buildTask** 执行前，都会运行 **compileTask**。
+
+``` groovy
+defaultTasks 'buildTask'
+task compileTask << {
+  System.out.println "compiling..." 
+}
+task buildTask (dependsOn:compileTask) << {
+  System.out.println "building..."
+}
+```
+
+现在再次运行 `gradle -q`，就会一次执行两个任务。
+
+
+
+### Part 2:Java 工程
+
+#### Gradle：工程、任务和插件
+
+
 
