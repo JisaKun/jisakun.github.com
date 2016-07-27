@@ -5,7 +5,7 @@ date: 2016-07-26 15:27
 thumbnail:
 tags: gradle
 categories: gradle
-published: false
+published: true
 
 ---
 原文链接：[Romin Irani's Blog](https://rominirani.com/announcing-gradle-tutorial-series-5fd134223bf8#.2mi16ux8a)（不知道为什么，需要梯子）
@@ -217,5 +217,5 @@ task buildTask (dependsOn:compileTask) << {
 
 #### Gradle：工程、任务和插件
 
-
+To be continued ...
 
