@@ -12,7 +12,7 @@ published: true
 
 原文共分为10篇，后几篇涉及到Android内容，我用不到，就只记录了前四篇。
 
-{:toc}
+[TOC]
 
 ### Part 1:安装+设置
 
@@ -215,7 +215,55 @@ task buildTask (dependsOn:compileTask) << {
 
 ### Part 2:Java 工程
 
-#### Gradle：工程、任务和插件
+#### Java 插件
+
+让我们先从所有 Java 开发人员最关心的开始：[**Java plugin**](https://docs.gradle.org/current/userguide/java_plugin.html)。这个插件有如下作用：
+
+* 编译（compilation）
+* 测试（testing）
+* 打包（bundling）
+
+这些全都作用于 Java 工程，尤其是打包通常意味着打包成一个 Jar 文件。
+
+**如果你要使用插件，你就要将它添加到 build.gradle 中：**
+
+``` groovy
+apply plugin: <plugin-name>
+```
+
+所以要使用 Java 插件，就要这么写：
+
+``` groovy
+apply plugin: "java"
+```
+
+让我们试着理解代码背后发生了什么。
+
+先创建一个文件夹，比如 example2。在文件夹中创建一个标准 **build.gradle** 文件，填入 `apply plugin: "java"`。
+
+插件会加入一系列处理 Java 工程的任务。运行 `gradle tasks`来了解我们新增加了什么任务。结果如下（只列出了 Build Tasks）：
+
+```
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend
+on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles classes 'main'.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+testClasses - Assembles classes 'test'.
+```
+
+这些任务也会彼此依赖，请参照文档 [dependency graph](http://www.gradle.org/docs/current/userguide/java_plugin.html) 。
+
+#### 用 Gradle Java Plugin 构建基本 Java 工程
+
+参照官方文档，Java 插件会按照下面的约定寻找 Java 代码和 Java 测试类：
+
+![xx](https://cdn-images-1.medium.com/max/800/0*EpiEIJtyGBXx8ojU.png)
 
 To be continued ...
 
