@@ -12,7 +12,7 @@ published: true
 
 原文共分为10篇，后几篇涉及到Android内容，我用不到，就只记录了前四篇。
 
-[TOC]
+{:toc}
 
 ### Part 1:安装+设置
 
