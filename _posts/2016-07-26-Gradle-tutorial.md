@@ -263,7 +263,107 @@ testClasses - Assembles classes 'test'.
 
 参照官方文档，Java 插件会按照下面的约定寻找 Java 代码和 Java 测试类：
 
+| Directory               | Meaning                              |
+| ----------------------- | ------------------------------------ |
+| src/main/java           | Production Java source               |
+| src/main/resources      | Production resources                 |
+| src/test/java           | Test Java source                     |
+| src/test/resources      | Test resources                       |
+| src/sourceSet/java      | Java source for the given source set |
+| src/sourceSet/resources | Resources for the given source set   |
+
 ![xx](https://cdn-images-1.medium.com/max/800/0*EpiEIJtyGBXx8ojU.png)
+
+以上路径不是强制的。如果你要变更到不同的文件夹，只需要在 Java 插件的文档中查阅一下如何替换 SourceSet 路径。
+
+什么是 SourceSet ？
+
+> It identifies the source i.e. grouping for your source files that need to be compiled and built together, some sort of a logical grouping or component. As per the official documentation, the Java plugin defines two standard source sets, called main and test. The main source set contains your production source code, which is compiled and assembled into a JAR file. The test source set contains your unit test source code, which is compiled and executed using JUnit or TestNG.
+
+按照 Java 插件的约定，我们要把所有的 Java 文件放在 **src/main/java** 文件夹内，把所有的测试文件放到 **src/main/test** 文件夹内。
+
+一个工程文件目录结构的示例：
+
+![x](https://cdn-images-1.medium.com/max/800/0*rDp-L0zd2k99cWDT.png)
+
+在包下的 **quoteapp** 文件夹下有一个 **Quote.java** 文件：
+
+``` java
+package com.mindstorm.quoteapp;
+public class Quote {
+ private Long id;
+ private String who;
+ private String what;
+ 
+ public void setId(Long id) {
+ this.id = id;
+ }
+ public void setWho(String who) {
+ this.who = who;
+ }
+ public void setWhat(String what) {
+ this.what = what;
+ }
+ public Long getId() {
+ return id;
+ }
+ public String getWho() {
+ return who;
+ }
+ public String getWhat() {
+ return what;
+ }
+}
+```
+
+现在我们回到项目的根目录，此时根目录下的 build.gradle 文件只有一行代码：`apply plugin:"java"` 。
+
+然后执行下面的命令，注意我们去掉了`-q`参数以便观察完整的控制台输出：
+
+``` shell
+gradle assemble
+```
+
+这条命令编译并（compiling）将你的 Java 文件打包（building）成 JAR 文件。多项任务被执行，表明 `assemble` 任务依赖其他多项任务。命令的执行结果如下：
+
+``` shell
+E:\gradle-projects\example2>gradle assemble
+:compileJava
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+```
+
+你也可以尝试在代码内引入编译错误，看看 `assemble` 命令会输出啥。
+
+这条命令的结果是啥？如果一切顺利，会在你的工程根目录下生成一个 **build** 文件夹。文件夹内有 **libs** 文件夹，其内又包含 **example2.jar** 。这个文件名取决于你的文件夹名。
+
+如果你想清空 build 目录再次构建，可以调用 `gradle clean` 命令后运行 `gradle assemble` 。
+
+以下命令也可以完成检查（check）和装配（assemble）任务：
+
+``` shell
+gradle -q build
+```
+
+现在继续完善 build.gradle ，给 JAR 文件提供版本号和不同的名字：
+
+``` groovy
+apply plugin: 'java'
+archivesBaseName = "quote"
+version = '1.0-FINAL'
+```
+
+现在执行 `gradle assemble` 后生成的 JAR 文件会命名为 \<name>-\<version>.jar ，比如 quote-1.0-FINAL.jar 。
+
+**注意：**
+
+#### 依赖初探
+
+
+
+
 
 To be continued ...
 
