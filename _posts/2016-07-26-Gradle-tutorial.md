@@ -357,9 +357,87 @@ version = '1.0-FINAL'
 
 现在执行 `gradle assemble` 后生成的 JAR 文件会命名为 \<name>-\<version>.jar ，比如 quote-1.0-FINAL.jar 。
 
-**注意：**
+**注意：** You might be wondering from where do I produce stuff like archivesBaseName, etc. The only answer I can give is that the documentation is vast and you will have to navigate yourself through it. For e.g. go to the official page of the Java plugin, search for archivesBaseName and you will understand what is going on. My only advice is to keep the documentation handy, some property or the other will be there, just think logically and you will find the answer in the documentation.
 
 #### 依赖初探
+
+不依赖第三方库的 Java 代码是乏善可陈的。回顾一下上面的 Quote.java ，只是一个简单的 Java bean ，如果要添加一个 **toString()** 方法来增强功能，就要用到第三方库：Apache Commons JAR 。
+
+``` java
+package com.mindstorm.quoteapp;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+public class Quote {
+ private Long id;
+ private String who;
+ private String what;
+ 
+ public void setId(Long id) {
+ this.id = id;
+ }
+ public void setWho(String who) {
+ this.who = who;
+ }
+ public void setWhat(String what) {
+ this.what = what;
+ }
+ public Long getId() {
+ return id;
+ }
+ public String getWho() {
+ return who;
+ }
+ public String getWhat() {
+ return what;
+ }
+public String toString() {
+ return ToStringBuilder.reflectionToString(this);
+ }
+}
+```
+
+这时如果执行`gradle assemble`命令，你就会看到标准编译错误伴随着 BUILD FAILED 信息。
+
+解决方法就是修改 build.gradle 文件，让它知道两件事：
+
+* 编译代码需要哪些 JAR 包？
+* 去哪里找这些 JAR 包？
+
+去 Gradle 仓库！仓库就是 Gradle 用来定位 JAR 包的地方。Gradle 支持当下广受欢迎的公共仓库，就像 Maven Central 和 Ivy ，甚至是你的本地仓库。如果你之前用过 Maven ，这会听着很熟悉。
+
+你需要在 build.gradle 里追加以下元素来配置一个远程仓库：
+
+``` groovy
+respositories {
+  mavenCentral()
+}
+```
+
+这让 Gradle 在 Maven 中央库寻找你指定的任何依赖（JAR 包）。
+
+要牢牢记住这点：任何被发布到 Maven 中央库的文件都有以下三个坐标：
+
+* Group Id （group）
+* Artifact Id （name）
+* Version （version）
+
+比如你要在 Maven 中央库定位 Apache Commons 3.3.2 JAR 这个包，需要以下代码：
+
+``` xml
+<groupId>org.apache.commons</groupId>
+<artifactId>commons-lang3</artifactId>
+<version>3.3.2</version>
+```
+
+依赖暂时先谈到这里，我们先要理解一个概念：**Gradle 的配置（Configurations ）** 。
+
+#### Java 插件提供的配置
+
+目前为止，我们需要向 build.gradle 提供额外的信息，包括编译所需的 JAR 包和在哪里找到这些包。通过 `mavenCentral()` 库我们解决了“去哪里找包”的问题，还需要在 build.gradle 中指定需要哪些文件，比如上面提到的 Apache Commons Lang library 。
+
+为此，Gradle 提出了 **配置（Configuration）** 的概念。一条配置是一系列依赖的集合。你可以用来定义工程的外部依赖。
+
+
 
 
 
